@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
+    private static int index;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void doAlphaTest() {
         Log.i(TAG, "start to do alpha test");
+        index += 1;
+        Log.i(TAG, "index: " + index);
     }
 }
